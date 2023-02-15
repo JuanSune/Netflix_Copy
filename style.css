@@ -5,6 +5,40 @@
     margin: 0;
 }
 
+body{
+    background-color: #111;
+}
+
 .row__poster{
-    
+    width: 100%;
+    max-height: 200px;
+    margin-right: 10px;
+    object-fit: contain;
+    transition: transform 450ms ;
+
+ 
+}
+
+.row__posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row__poster:hover{
+   transform: scale(1.08);
+}
+
+.row__posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row__posterLarger{
+    max-height: 300px;
+}
+
+.row{
+    color: white;
+    margin-left: 20px;
 }
